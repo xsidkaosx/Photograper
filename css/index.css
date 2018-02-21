@@ -27,6 +27,10 @@ body{
 }
 
 .secundaria{
+  display: flex;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
   background-color: #d5c75f;
 }
 
@@ -56,10 +60,31 @@ nav, .footer, .cabecera, .central, .secundaria {
   border-radius: 0px 0px 10px 10px;
 }
 
+.central img{
+  width: 100%;
+}
+.secundaria img{
+  width: 100%;
+}
+
+#imgIzq:hover{
+  transform: rotate(10deg);
+  box-shadow: 2px 2px #82c3a6;
+}
+
+#imgDer:hover{
+  transform: translate(20px,5px);
+  box-shadow: 2px 2px #82c3a6;
+}
+
 @media (min-width: 900px) {
   .container{
     margin: 0 auto;
     width: 900px
+  }
+
+  .secundaria img{
+    width: 50%;
   }
 
   .footer div{
