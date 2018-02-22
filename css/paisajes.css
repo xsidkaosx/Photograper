@@ -11,31 +11,26 @@
   text-align: center;
   width: 100%;
 }
-
 .galeria div > img{
   width: 90%;
   height: 90%;
 }
-
-#paisaje1 img{
-  -webkit-filter: blur(10px); /* Chrome, Safari, Opera */
-	filter: blur(10px);
-}
-
 .galeria div:nth-child(even) img{
-	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 }
-
+#paisaje1 img{
+  -webkit-filter: blur(10px);
+	filter: blur(10px);
+}
 #paisaje3 img{
-	-webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
+	-webkit-filter: sepia(90%);
 	filter: sepia(90%);
 }
 
+
 @media (min-width: 900px) {
-.galeria > div {
-    width: 33.3%;
-  }
-
-
+  .galeria > div {
+      width: 33.3%;
+    }
 }

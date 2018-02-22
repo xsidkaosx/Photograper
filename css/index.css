@@ -30,14 +30,12 @@
 #imgIzq, #imgDer{
   transition: all 1s ease;
 }
-
 #imgIzq:hover{
   transform: rotate(10deg);
   -webkit-box-shadow: 2px 2px 5px #82c3a6;
   -moz-box-shadow: 2px 2px 5px #82c3a6;
   box-shadow: 2px 2px #82c3a6;
 }
-
 #imgDer:hover{
   transform: translate(20px,5px);
   -webkit-box-shadow: 2px 2px 5px #82c3a6;

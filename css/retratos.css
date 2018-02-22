@@ -33,9 +33,7 @@
 }
 
 @media (min-width: 900px) {
-.galeria > div {
-    width: 33.3%;
-  }
-
-
+  .galeria > div {
+      width: 33.3%;
+    }
 }
