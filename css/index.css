@@ -7,8 +7,12 @@ body{
 .container {
   display: flex;
   display: -webkit-flex;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.container > div {
+  padding: 20px;
 }
 
 .cabecera{
@@ -25,13 +29,23 @@ body{
 .central{
   background-color: #82c3a6;
 }
+.central img{
+  width: 100%;
+  height: 100%
+}
 
 .secundaria{
   display: flex;
   display: -webkit-flex;
-  -webkit-flex-flow: row wrap;
+  -webkit-flex-flow: row;
   flex-flow: row wrap;
   background-color: #d5c75f;
+  text-align: center;
+}
+.secundaria img{
+  width: 100%;
+  height: 100%;
+  margin: 10px 0px;
 }
 
 nav a{
@@ -43,14 +57,13 @@ nav a{
   text-decoration: none;
 }
 
-nav, .footer, .cabecera, .central, .secundaria {
+/*nav, .footer, .cabecera, .central, .secundaria {
   width: 100%;
-}
+}*/
 
 .footer div{
   width: 100%;
 }
-
 .footer{
   display: flex;
   display: -webkit-flex;
@@ -60,21 +73,24 @@ nav, .footer, .cabecera, .central, .secundaria {
   border-radius: 0px 0px 10px 10px;
 }
 
-.central img{
-  width: 100%;
-}
-.secundaria img{
-  width: 100%;
+.imgefecto {
+  -webkit-box-shadow: 2px 2px 5px #02010a;
+  -moz-box-shadow: 2px 2px 5px #02010a;
+  box-shadow: 2px 2px 5px #02010a;
 }
 
 #imgIzq:hover{
   transform: rotate(10deg);
+  -webkit-box-shadow: 2px 2px 5px #82c3a6;
+  -moz-box-shadow: 2px 2px 5px #82c3a6;
   box-shadow: 2px 2px #82c3a6;
 }
 
 #imgDer:hover{
   transform: translate(20px,5px);
-  box-shadow: 2px 2px #82c3a6;
+  -webkit-box-shadow: 2px 2px 5px #82c3a6;
+  -moz-box-shadow: 2px 2px 5px #82c3a6;
+  box-shadow: 2px 2px 5px #82c3a6;
 }
 
 @media (min-width: 900px) {
@@ -90,6 +106,5 @@ nav, .footer, .cabecera, .central, .secundaria {
   .footer div{
     width: 25%;
   }
-
 
 }
