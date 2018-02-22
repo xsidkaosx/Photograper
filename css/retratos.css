@@ -17,7 +17,7 @@
   height: 90%;
 }
 
-#paisaje1 img{
+#retrato1 img{
   -webkit-filter: blur(10px); /* Chrome, Safari, Opera */
 	filter: blur(10px);
 }
@@ -27,7 +27,7 @@
 	filter: grayscale(100%);
 }
 
-#paisaje3 img{
+#retrato3 img{
 	-webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
 	filter: sepia(90%);
 }
